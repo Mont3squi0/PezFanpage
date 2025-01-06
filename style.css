@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(63, 62, 62);
+}
+.carousel {
+    padding-top: 65px; /* Cambia este valor según la altura de tu navbar */
+  }
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-body .btn{
+    margin-top: auto;
+}
+/* Estilo general para las imágenes */
+.social-logo {
+  transition: transform 0.3s ease ; /* Animación suave para transformación */
+}
+
+/* Efecto hover: cambia la imagen */
+.col a:hover .social-logo {
+  content: url('/source/redes/pez\ hover.jpg'); /* Cambia a la imagen hover correspondiente */
+  transform: scale(1.1); /* Agranda ligeramente la imagen */
+  opacity: 0.8; /* Hace que se vea un poco más tenue */
+}
+.col a:hover .h4-redes {
+    color: black; /* Cambia el color del texto */
+  }
+
+/* Ejemplo: cambia las imágenes para cada logo */
+.col:nth-child(1) a:hover .social-logo {
+  content: url('/source/redes/pez\ hover.jpg');
+}
+
+.col:nth-child(2) a:hover .social-logo {
+  content: url('/source/redes/kiosquito\ hover.jpg');
+}
+
+.col:nth-child(3) a:hover .social-logo {
+  content: url('/source/redes/youtube\ hover.jpg');
+}
+
+.col:nth-child(4) a:hover .social-logo {
+  content: url('/source/redes/instagram\ hover.jpg');
+}
+
+.col:nth-child(5) a:hover .social-logo {
+  content: url('/source/redes/facebook\ hover.jpg');
+}
+
+  
+.h4-redes{
+    margin-bottom: 15px;
+
+    color: gray;
+}
+
+.col a{
+    text-decoration: none;
+}
